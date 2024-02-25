@@ -1,0 +1,7 @@
+# Python pycache directories
+__pycache__/
+*.pyc
+
+# Python env files
+.env
+venv/
