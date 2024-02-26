@@ -1,5 +1,6 @@
 import os
 from tkinter import *
+import tkinter
 import customtkinter
 from feature_extraction import pe_extract
 
@@ -40,6 +41,8 @@ def input():
         )
     
     file_path = dialog.get_input()
+    if file_path == None:
+        file_path = ''
     if file_path == '':
         my_text.insert('end', f"Empty path is not a valid path.\n")
     elif not os.path.exists(file_path):
@@ -48,17 +51,27 @@ def input():
     else:
         my_text.insert('end', "got file path: %s\n" %(file_path))
 
+
 top_bar = customtkinter.CTkFrame(root, corner_radius=0) 
 top_bar.grid(row=0, column=0, columnspan=2, sticky="nsew")
-top_bar.configure(height= 70, fg_color = "#000009")
+top_bar.configure(height= 70, fg_color = "#083b5f")
 top_bar.pack_propagate(0)
 
-name_font = customtkinter.CTkFont(family="Consolas", size=30, 
+name_font = customtkinter.CTkFont(family="Kristen ITC", size=35, 
     weight="bold", slant="italic", underline=False, overstrike=False)
 
+bg_image = PhotoImage(file="image14-1.png")
 app_name_label = customtkinter.CTkLabel(master=top_bar, text="PE Malware Classifier", font=name_font)
 app_name_label.pack(side="left")
-app_name_label.configure(padx = 15, text_color = "#0080ff")
+app_name_label.configure(padx = 15, text_color = "#217B7E")
+
+def show_help():
+    my_text.insert('end', "Help: This is a classifier for malicious PE files\nTo run please specify the file path first and then press start\n")
+    
+    
+
+help_button = customtkinter.CTkButton(master=top_bar, text="Help", command=show_help)
+help_button.pack(side="right", padx=10)
 
 root.columnconfigure(0, weight=1)
 root.rowconfigure(1, weight=1)
