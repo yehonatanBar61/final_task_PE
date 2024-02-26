@@ -32,11 +32,11 @@ def input():
     global file_path
     dialog = customtkinter.CTkInputDialog(text="Please enter the path to the PE file", title="File Path window",
         fg_color="white",
-        button_fg_color="#7676ff",
-        button_hover_color="#5d5dff",
+        button_fg_color="#2a97d4",
+        button_hover_color="#083b5f",
         button_text_color="white",
-        entry_fg_color="#7676ff",
-        entry_border_color="#7676ff",
+        entry_fg_color="#2a97d4",
+        entry_border_color="#083b5f",
         entry_text_color="black"
         )
     
@@ -61,6 +61,7 @@ name_font = customtkinter.CTkFont(family="Kristen ITC", size=35,
     weight="bold", slant="italic", underline=False, overstrike=False)
 
 bg_image = PhotoImage(file="image14-1.png")
+
 app_name_label = customtkinter.CTkLabel(master=top_bar, text="PE Malware Classifier", font=name_font)
 app_name_label.pack(side="left")
 app_name_label.configure(padx = 15, text_color = "#217B7E")
@@ -68,10 +69,11 @@ app_name_label.configure(padx = 15, text_color = "#217B7E")
 def show_help():
     my_text.insert('end', "Help: This is a classifier for malicious PE files\nTo run please specify the file path first and then press start\n")
     
-    
+
 
 help_button = customtkinter.CTkButton(master=top_bar, text="Help", command=show_help)
 help_button.pack(side="right", padx=10)
+help_button.configure(fg_color = "#217B7E", font= ("Kristen ITC", 20))
 
 root.columnconfigure(0, weight=1)
 root.rowconfigure(1, weight=1)
@@ -99,11 +101,14 @@ my_frame.grid(row=1, column=1, padx=10, pady=20, sticky="nsew")
 
 sniff_button = customtkinter.CTkButton(my_frame, text="Start", command=start)
 sniff_button.grid(row=0, column=0, padx=10, pady=10)
+sniff_button.configure(fg_color = "#2a97d4", font= ("aria", 17))
 
 clear_button = customtkinter.CTkButton(my_frame, text="Clear Text", command=clear_text)
 clear_button.grid(row=1, column=0, padx=10, pady=10)
+clear_button.configure(fg_color = "#2a97d4", font= ("aria", 17))
 
 enter_FilePath_button = customtkinter.CTkButton(my_frame, text="Enter File Path", command=input)
 enter_FilePath_button.grid(row=2, column=0, padx=10, pady=10)
+enter_FilePath_button.configure(fg_color = "#2a97d4", font= ("aria", 17))
 
 root.mainloop()
