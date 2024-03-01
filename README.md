@@ -27,3 +27,22 @@ https://www.kaggle.com/datasets/dscclass/malware
 
 ![App project_workflow](Snapshot/project_workflow.png)
 
+### Running the code:
+clone this repo, you can do this using
+```bash
+  git clone https://github.com/Kiinitix/Malware-Detection-using-Machine-learning.git
+```
+
+then, open the terminal in that location and install all the dependencies of the project using,
+
+```bash
+  pip install -r requirement.text
+```
+
+Finally - run the main.py file to start the project:
+
+```bash
+  python3 main.py
+```
+
+
