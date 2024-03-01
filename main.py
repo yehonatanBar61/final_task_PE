@@ -64,7 +64,6 @@ top_bar.pack_propagate(0)
 name_font = customtkinter.CTkFont(family="Kristen ITC", size=35, 
     weight="bold", slant="italic", underline=False, overstrike=False)
 
-bg_image = PhotoImage(file="image14-1.png")
 
 app_name_label = customtkinter.CTkLabel(master=top_bar, text="PE Malware Classifier", font=name_font)
 app_name_label.pack(side="left")
