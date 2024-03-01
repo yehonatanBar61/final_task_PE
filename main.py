@@ -22,8 +22,12 @@ def start():
         my_text.insert('end', f"File path '{file_path}' does not exist\n")
     else:
         my_text.insert('end', "Starting the classification...\n")
-        result = pe_extract.pe_extract(file_path)
-        my_text.insert('end', f"{file_path} is {'malicious' if result.res else 'legitimate'}!\n")
+        try:
+            result = pe_extract.pe_extract(file_path)
+            my_text.insert('end', f"{file_path} is {'malicious' if result.res else 'legitimate'}!\n")
+        except Exception as e:
+            error_message = f"An error occurred: {str(e)}\n"
+            my_text.insert('end', error_message)
 
 def clear_text():
     my_text.delete(1.0, 'end')
