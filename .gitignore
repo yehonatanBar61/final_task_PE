@@ -5,3 +5,4 @@ __pycache__/
 # Python env files
 .env
 venv/
+.ipynb_checkpoints/
