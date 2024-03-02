@@ -3,7 +3,8 @@
 
 ### Created by:
 - Yehonatan Baruchson
-- itamar 
+- Itamar kuznitsov
+ 
 
 ### Abstract:
 In the past few years, malware has become one of the most significant threats to computer security. In this project we implemented a new detection model to classify PE files based on the article: “Investigation of Malicious Portable Executable File Detection on the Network using Supervised Learning Techniques”. Our implementation includes new data features for model training and uses a newer dataset. The returned results showed that the proposed system can achieve 99.55% detection rates, 0.0494 false positive rate, and by that we improve the detection part significantly.
