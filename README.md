@@ -48,5 +48,8 @@ finally - run the main.py file to start the project:
 ```
 ## Run exmple video
 
+https://github.com/yehonatanBar61/final_task_PE/assets/93926764/b4915b1b-3e50-4abd-843f-eb67fd1260a8
+
+
 
 
