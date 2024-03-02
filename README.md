@@ -21,11 +21,13 @@ We used the DSC-CLASS dataset from kaggle, to train the model and then to test i
 https://www.kaggle.com/datasets/dscclass/malware
 
 
-## Screenshots
-
-![GUI](Snapshot/GUI.png)
+## Architecture
 
 ![App project_workflow](Snapshot/project_workflow.png)
+
+## User Interface Design
+
+![GUI](Snapshot/GUI.png)
 
 ### Running the code:
 clone this repo, you can do this using
@@ -39,10 +41,12 @@ then, open the terminal in that location and install all the dependencies of the
   pip install -r requirement.text
 ```
 
-Finally - run the main.py file to start the project:
+finally - run the main.py file to start the project:
 
 ```bash
   python3 main.py
 ```
+## Run exmple video
+
 
 
