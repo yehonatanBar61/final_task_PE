@@ -22,10 +22,10 @@ https://www.kaggle.com/datasets/dscclass/malware
 
 ## Clasification model results:
 
-Accuracy (RandomForest): 0.99375530798821 
-Precision (RandomForest): 0.9954730163256577 
-Recall (RandomForest): 0.9956149732620321 
-F1 score (RandomForest): 0.9955439897333523
+Accuracy (RandomForest): 0.99375530798821 <br />
+Precision (RandomForest): 0.9954730163256577 <br />
+Recall (RandomForest): 0.9956149732620321 <br />
+F1 score (RandomForest): 0.9955439897333523 <br />
 
 ## Architecture
 
