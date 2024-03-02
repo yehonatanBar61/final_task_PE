@@ -20,7 +20,7 @@ We used the DSC-CLASS dataset from kaggle, to train the model and then to test i
 ### dataset 
 https://www.kaggle.com/datasets/dscclass/malware
 
-## Clasification model results:
+## Classification model results:
 
 Accuracy (RandomForest): 0.99375530798821 <br />
 Precision (RandomForest): 0.9954730163256577 <br />
